@@ -17,8 +17,8 @@ def facts():
     data = json.dumps(data)
     a = jsonify(data)
     newline = print("\n")
-    str = f"{a}{newline}"
-    print(str)
+    b = f"{a}{newline}"
+    print(b)
     
 
 if __name__=='__main__':
