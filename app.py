@@ -12,11 +12,14 @@ def facts():
     prac = docx2txt.process("iotprac.docx")
     value = str(prac)
     data = {
-       'iot' : value+"/n",
-        
+       'iot' : value, 
     }
     data = json.dumps(data)
-    return jsonify(data)
+    a = jsonify(data)
+    newline = '\n'
+    str = f"{a}{newline}"
+    print(str)
+    
 
 if __name__=='__main__':
     app.run(debug=False)
