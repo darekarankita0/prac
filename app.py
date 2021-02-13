@@ -14,7 +14,8 @@ def facts():
     a="                                           "
     value = value + a
     data = {
-       'iot' : value, 
+       'iot' : 
+        value, 
     }
     data = json.dumps(data)
     return jsonify(data)
