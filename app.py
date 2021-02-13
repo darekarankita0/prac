@@ -16,7 +16,7 @@ def facts():
     #value=(random.choices(facts))
     #print(type(value[0]))
     data = {
-       'Internet Of Things' : value,
+       'fact' : value,
     }
     data = json.dumps(data)
     return jsonify(data)
