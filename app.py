@@ -16,7 +16,7 @@ def facts():
     }
     data = json.dumps(data)
     a = jsonify(data)
-    newline = '\n'
+    newline = print("\n")
     str = f"{a}{newline}"
     print(str)
     
