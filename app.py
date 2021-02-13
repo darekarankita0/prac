@@ -11,14 +11,13 @@ def facts():
     import docx2txt
     prac = docx2txt.process("iotprac.docx")
     value = str(prac)
+    a="                                           "
+    value = value + a
     data = {
        'iot' : value, 
     }
     data = json.dumps(data)
-    a = jsonify(data)
-    newline = print("\n")
-    b = f"{a}{newline}"
-    print(b)
+    return jsonify(data)
     
 
 if __name__=='__main__':
